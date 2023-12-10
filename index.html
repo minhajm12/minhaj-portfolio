@@ -10,23 +10,26 @@
 
   <body>
     <header id="headersection">
-      <div class="navbar">
-        <div class="main-navbar">
-          <div class="navbrand">
-            <a href="">
-              <img src="assets/img/logo/main-logo.png" alt="" />
-            </a>
-          </div>
-          <div class="menu-bar">
-            <a href="">
-              <img src="assets/img/svg/bars.svg" alt="" />
-            </a>
+      <div class="container">
+        <div class="navbar">
+          <div class="main-navbar">
+            <div class="navbrand">
+              <a href="">
+                <img src="assets/img/logo/main-logo.png" alt="" />
+              </a>
+            </div>
+            <div class="menu-bar">
+              <a class="menuopen">
+                <img src="assets/img/svg/bars.svg" alt="" />
+              </a>
+            </div>
           </div>
         </div>
       </div>
-      <div id="menucnvs">
+
+      <div id="menucnvs" class="menucnvs">
         <div class="cnvs-logo">
-          <a href="">
+          <a class="menuclose">
             <img src="assets/img/logo/main-logo.png" alt="" />
           </a>
         </div>
@@ -84,8 +87,18 @@
     <div id="main">
       <div id="bannersection">
         <div class="container">
-          <div class="left"></div>
-          <div class="right"></div>
+          <div class="left">
+            <h3 class="banner-text">
+              Hi, I'm <span class="banner-text grade-sec">Minhaj</span>
+            </h3>
+            <h2 class="banner-text">Web Developer &</h2>
+            <h1 class="banner-text">
+              Designer<span class="banner-text grade-sec">.</span>
+            </h1>
+          </div>
+          <div class="right">
+            <img src="assets/img/banner-img.png" alt="" />
+          </div>
         </div>
       </div>
     </div>

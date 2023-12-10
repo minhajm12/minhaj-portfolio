@@ -1,10 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
+@font-face {
+    font-family: 'trap';
+    src: url('assets/fonts/Trap-Regular.otf');
+  }
+
 *
 {
     margin: 0;
     padding: 0;
     font-family: 'Lexend', sans-serif;
+    box-sizing: border-box;
 }
 
 
@@ -35,12 +41,14 @@ body
 {
     /* background: red; */
     /* height: 100px; */
-    position: relative;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
 }
 #headersection .navbar
 {
-    margin: 10px 10%;
-    padding: 0 60px;
+    /* margin: 10px 10%; */
+    /* padding: 0 60px; */
     /* background: var(--scndry); */
     border-radius: 50px;
 }
@@ -89,17 +97,32 @@ body
     flex-direction: column;
     /* display: none; */
 }
+
+
+
+
+
 #menucnvs
 {
-    position: absolute;
-    right: 0;
+    position: fixed;
+    right: -50%;
     top:0;
     padding: 3% 8% 3% 3%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap:100px;
+    justify-content: space-between;
+    /* gap:100px; */
     background: rgba(255, 255, 255, 0.80);backdrop-filter: blur(20px);
+    height: 100vh;
+    transition: .3s ease;
+}
+.menucnvs-active
+{
+    right: 0 !important;
+}
+.menuopen, .menuclose
+{
+    cursor: pointer;
 }
 #menucnvs .cnvs-logo
 {
@@ -220,4 +243,69 @@ body
 {
     display: flex;
     gap:20px;
+}
+
+
+
+#main
+{
+    position: relative;
+}
+#bannersection
+{
+    width: 100%;
+}
+#bannersection .container
+{
+    display: flex;
+}
+#bannersection .left,
+#bannersection .right
+{
+    width: 50%;   
+    height:100vh;
+}
+#bannersection .right
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#bannersection .left
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+#bannersection .left h3
+{
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+#bannersection .left h2
+{
+    font-size: 38px;
+    background: -webkit-linear-gradient(180deg, var(--maincolor), var(--scndcolor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-transform:uppercase;
+    font-weight: 800;
+}
+#bannersection .left h1
+{
+    font-size: 70px;
+    text-transform:uppercase;
+    font-weight: 800;
+    margin-top: -8px;
+}
+.banner-text
+{
+    font-family: 'trap' !important;
+}
+.grade-sec
+{
+    background: -webkit-linear-gradient(0deg, var(--maincolor), var(--scndcolor));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
