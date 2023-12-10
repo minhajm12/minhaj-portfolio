@@ -7,28 +7,61 @@
     font-family: 'Lexend', sans-serif;
 }
 
-body
-{
-    background: #fff;
+
+
+
+:root {
+    --primary:#fff;
+    --scndry:#000;
+    --maincolor: #F94C10;
+    --scndcolor: #CC0834;
 }
 
 
+
+
+body
+{
+    background: var(--primary);
+}
+
+.container
+{
+    max-width: 1320px;
+    margin: 0 auto;
+}
 
 #headersection
 {
     /* background: red; */
     /* height: 100px; */
+    position: relative;
 }
 #headersection .navbar
 {
     margin: 10px 10%;
     padding: 0 60px;
-    /* background: #000; */
+    /* background: var(--scndry); */
     border-radius: 50px;
+}
+#headersection .menu-bar
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#headersection .menu-bar a
+{
+    transition: .3s ease;
+}
+#headersection .menu-bar a:hover
+{
+    transform: scale(1.1);
 }
 #headersection .main-navbar
 {
     display: flex;
+    justify-content: space-between;
 }
 #headersection .main-navbar .navbrand
 {
@@ -52,34 +85,61 @@ body
 
 #headersection .main-navbar .nav-main
 {
-    width: 95%;
+    display: flex;
+    flex-direction: column;
+    /* display: none; */
 }
-#headersection ul
+#menucnvs
+{
+    position: absolute;
+    right: 0;
+    top:0;
+    padding: 3% 8% 3% 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:100px;
+    background: rgba(255, 255, 255, 0.80);backdrop-filter: blur(20px);
+}
+#menucnvs .cnvs-logo
+{
+    width: 200px;
+}
+#menucnvs .cnvs-logo img
+{
+    width: 100%;
+}
+
+#menucnvs ul
 {
     display: flex;
     gap:30px;
     justify-content: flex-end;
-    align-items: center;
+    /* align-items: center; */
+    flex-direction: column;
+    width: fit-content;
+    
 }
-#headersection ul li
+#menucnvs ul li
 {
     list-style-type: none;
 }
-#headersection ul li a
+#menucnvs ul li .navlink
 {
     position: relative;
     text-decoration: none;
-    /* color: #fff; */
-    color: #000;
-    font-size: 18px;
-    font-weight: 500;
-    padding:10px 20px;
+    /* color: var(--primary); */
+    color: var(--scndry);
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding:10px 30px;
     border-radius: 50px;
     z-index: 1;
     transition: .2s ease;
 
 }
-#headersection ul li a::before
+#menucnvs ul li a::before
 {
     content: '';
     position: absolute;
@@ -93,12 +153,71 @@ body
     transition: .2s ease;
     transform: scale(0);
 }
-#headersection ul li a:hover
+#menucnvs ul li a:hover
 {
-    color: #fff;
+    color: var(--primary);
 }
-#headersection ul li a:hover::before
+#menucnvs ul li a:hover::before
 {
     width: 100%;
     transform: scale(1);
+}
+
+#menucnvs .social-icon p
+{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#menucnvs .social-icon .icons
+{
+    display: flex;
+    gap:20px;
+    margin-top: 20px;
+}
+#menucnvs .social-icon .icons a
+{
+    text-decoration: none;
+    /* padding: 5px 10px; */
+    background: var(--scndry);
+    border-radius: 30px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary);
+    transition: .3s ease;
+}
+#menucnvs .social-icon .icons a:hover
+{
+    background:var(--maincolor);
+}
+#menucnvs .social-icon .icons a i
+{
+    font-size: 18px;
+}
+
+#menucnvs .address
+{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+#menucnvs .address .phone p
+{
+    font-size: 16px;
+    font-weight: 600;
+}
+#menucnvs .address i
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#menucnvs .address div
+{
+    display: flex;
+    gap:20px;
 }
