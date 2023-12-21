@@ -22,17 +22,20 @@
     --scndcolor: #CC0834;
 }
 
-
+p
+{
+    margin:0 !important;
+}
 
 
 body {
     background: var(--primary);
 }
 
-.container {
+/* .container {
     max-width: 1320px;
     margin: 0 auto;
-}
+} */
 
 #headersection {
     /* background: red; */
@@ -66,6 +69,7 @@ body {
 #headersection .main-navbar {
     display: flex;
     justify-content: space-between;
+    width: 100%;
 }
 
 #headersection .main-navbar .navbrand {
@@ -245,24 +249,27 @@ body {
 
 #bannersection {
     width: 100%;
-}
-
-#bannersection .container {
+    height: 100vh;
     display: flex;
+    align-items: center;
 }
 
-#bannersection .left,
+/* #bannersection .container {
+    display: flex;
+} */
+
+/* #bannersection .left,
 #bannersection .right {
     width: 50%;
     height: 100vh;
-}
+} */
 
-#bannersection .right {
+/* #bannersection .right {
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-}
+} */
 
 #bannersection .left {
     display: flex;
@@ -277,12 +284,13 @@ body {
 }
 
 #bannersection .left h2 {
-    font-size: 38px;
+    font-size: 40px;
     background: -webkit-linear-gradient(180deg, var(--maincolor), var(--scndcolor));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     text-transform: uppercase;
     font-weight: 800;
+    line-height: 38px;
 }
 
 #bannersection .left h1 {

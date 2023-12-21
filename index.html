@@ -1,93 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minhaj Portfolio</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
 
-  <body>
-    <header id="headersection">
-      <div class="container">
-        <div class="navbar">
-          <div class="main-navbar">
-            <div class="navbrand">
-              <a href="">
-                <img src="assets/img/logo/main-logo.png" alt="" />
-              </a>
-            </div>
-            <div class="menu-bar">
-              <a class="menuopen">
-                <img src="assets/img/svg/bars.svg" alt="" />
-              </a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minhaj Portfolio</title>
+
+  <!-- Bootstrap CDN-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Main Style -->
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header id="headersection">
+    <div class="container">
+      <div class="navbar">
+        <div class="main-navbar">
+          <div class="navbrand">
+            <a href="">
+              <img src="assets/img/logo/main-logo.png" alt="" />
+            </a>
+          </div>
+          <div class="menu-bar">
+            <a class="menuopen">
+              <img src="assets/img/svg/bars.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div id="menucnvs" class="menucnvs">
-        <div class="cnvs-logo">
-          <a class="menuclose">
-            <img src="assets/img/logo/main-logo.png" alt="" />
+    <div id="menucnvs" class="menucnvs">
+      <div class="cnvs-logo">
+        <a class="menuclose">
+          <img src="assets/img/logo/main-logo.png" alt="" />
+        </a>
+      </div>
+      <ul class="nav-main">
+        <li class="nav-items">
+          <a href="" class="navlink">Home</a>
+        </li>
+        <li class="nav-items">
+          <a href="" class="navlink">About</a>
+        </li>
+        <li class="nav-items">
+          <a href="" class="navlink">Services</a>
+        </li>
+        <li class="nav-items">
+          <a href="" class="navlink">Works</a>
+        </li>
+        <li class="nav-items">
+          <a href="" class="navlink">Hire Me</a>
+        </li>
+      </ul>
+      <div class="social-icon">
+        <p>CHECKOUT ON</p>
+        <div class="icons">
+          <a href="">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-github"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-behance"></i>
+          </a>
+          <a href="">
+            <i class="fa-brands fa-linkedin-in"></i>
           </a>
         </div>
-        <ul class="nav-main">
-          <li class="nav-items">
-            <a href="" class="navlink">Home</a>
-          </li>
-          <li class="nav-items">
-            <a href="" class="navlink">About</a>
-          </li>
-          <li class="nav-items">
-            <a href="" class="navlink">Services</a>
-          </li>
-          <li class="nav-items">
-            <a href="" class="navlink">Works</a>
-          </li>
-          <li class="nav-items">
-            <a href="" class="navlink">Hire Me</a>
-          </li>
-        </ul>
-        <div class="social-icon">
-          <p>CHECKOUT ON</p>
-          <div class="icons">
-            <a href="">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-behance"></i>
-            </a>
-            <a href="">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-          </div>
+      </div>
+      <div class="address">
+        <div class="phone">
+          <i class="fa-solid fa-phone"></i>
+          <p>+91 9496 402 173</p>
         </div>
-        <div class="address">
-          <div class="phone">
-            <i class="fa-solid fa-phone"></i>
-            <p>+91 9496 402 173</p>
-          </div>
-          <div class="email">
-            <i class="fa-solid fa-envelope"></i>
-            <p>minhajatholi222@gmail.com</p>
-          </div>
-          <div class="location">
-            <i class="fa-solid fa-location-dot"></i>
-            <p>Atholi, Calicut</p>
-          </div>
+        <div class="email">
+          <i class="fa-solid fa-envelope"></i>
+          <p>minhajatholi222@gmail.com</p>
+        </div>
+        <div class="location">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>Atholi, Calicut</p>
         </div>
       </div>
-    </header>
+    </div>
+  </header>
 
-    <div id="main">
-      <div id="bannersection">
-        <div class="container">
-          <div class="left">
+  <div id="main">
+    <div id="bannersection">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6 left">
             <h3 class="banner-text">
               Hi, I'm <span class="banner-text grade-sec">Minhaj</span>
             </h3>
@@ -105,22 +112,39 @@
               Designer<span class="banner-text grade-sec">.</span>
             </h1>
           </div>
-          <div class="right">
+          <div class="col-12 col-lg-6 right">
             <div class="img-div">
               <div class="banner-img">
-                <img src="assets/img/banner-img.png" alt="" />
+                <img src="assets/img/banner-img.png" alt="" class="img-fluid"/>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- FONT AWESOME -->
-    <script src="https://kit.fontawesome.com/275b00d5ce.js" crossorigin="anonymous"
-    ></script>
 
-    <!-- M12 Main -->
-    <script src="assets/js/main.js"></script>
-  </body>
+
+
+
+
+
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.2.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"
+    integrity="sha384-zYPOMqeu1DAVkHiLqWBUTcbYfZ8osu1Nd6Z89ify25QV9guujx43ITvfi12/QExE" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+  <!-- FONT AWESOME -->
+  <script src="https://kit.fontawesome.com/275b00d5ce.js" crossorigin="anonymous"></script>
+
+  <!-- M12 Main -->
+  <script src="assets/js/main.js"></script>
+</body>
+
 </html>
