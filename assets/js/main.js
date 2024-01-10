@@ -26,3 +26,104 @@ document.body.addEventListener('click', event => {
       // remove the 'active' class from the 'my-element' element
       document.querySelector('.menucnvs').classList.remove('menucnvs-active')
     });
+
+
+
+
+
+
+
+
+
+
+
+
+
+// BANNER INFINITE SLIDER
+ // World Wide Countries Slick Slider
+
+ if(document.querySelector('.main-items') !== null){
+      $('.main-items').slick({
+        // dots: true,
+      infinite:true,
+      loop:true,
+        autoplay:true,
+        autoplaySpeed:0,
+        speed:3000,
+        cssEase:'linear',
+        slidesToShow: 10,
+        slidesToScroll:1,
+        pauseOnHover:false,
+        draggable: false, 
+      //   rtl: true, // Set rtl to true to reverse the direction
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 8,
+                slidesToScroll: 1,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 900,
+              settings: {
+                slidesToShow: 6,
+                slidesToScroll: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 4,
+                slidesToScroll: 1,
+                speed:2000
+              }
+            }
+          ]
+      })
+    }
+
+
+    if (document.querySelector('.main-items-2') !== null) {
+      $('.main-items-2').slick({
+        infinite: true,
+        loop: true,
+        autoplay: true,
+        autoplaySpeed: 0,
+        speed: 4000,
+        cssEase: 'linear',
+        slidesToShow: 10,
+        slidesToScroll: 1,
+        pauseOnHover: false,
+        draggable: false, 
+      //   rtl: true, // Set rtl to true to reverse the direction
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 8,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+            },
+          },
+          {
+            breakpoint: 900,
+            settings: {
+              slidesToShow: 6,
+              slidesToScroll: 1,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 4,
+              slidesToScroll: 1,
+              speed: 2000,
+            },
+          },
+        ],
+      });
+    }
