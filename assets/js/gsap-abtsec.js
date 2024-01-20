@@ -15,7 +15,7 @@ const splitTypes = document.querySelectorAll('.abt-para')
                     scrub: 1,
                     // markers: true
                 },
-                opacity: 0.4,
+                opacity: 0.1,
                 stagger: 1
             })
 
@@ -24,7 +24,7 @@ const splitTypes = document.querySelectorAll('.abt-para')
         var tl = gsap.timeline({scrollTrigger:{
             trigger:".about-section",
             start:"top top",
-            end:"180% 80%",
+            end:"180% 45%",
             scrub:true,
             pin:true,
             // markers:{
