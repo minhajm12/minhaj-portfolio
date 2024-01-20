@@ -38,7 +38,8 @@ body {
 } */
 
 #headersection {
-    /* background: red; */
+    background: #ffffff80;
+    backdrop-filter: blur(20px);
     /* height: 100px; */
     position: fixed;
     width: 100%;
