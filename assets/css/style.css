@@ -43,7 +43,7 @@ body {
     /* height: 100px; */
     position: fixed;
     width: 100%;
-    z-index: 999;
+    z-index: 5;
 }
 
 #headersection .navbar {
@@ -244,10 +244,87 @@ body {
 
 
 
-#main {
+
+
+
+
+/* SWITCHER SECTION */
+.darkmode-switcher
+{
+    position: absolute;
+    top:45%;
+    width: fit-content;
+}
+.darkmode-switcher .main-div
+{
+    display: flex;
+    gap:10px;
+    transform: rotate(-90deg);
+}
+.darkmode-switcher .main-div .mode-text
+{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    /* height: calc(100vh - var(--header-height, 20px)); */
+}
+.darkmode-switcher .main-div .mode-text .para
+{
+    /* position: absolute; */
+}
+.darkmode-switcher .mode-text p
+{
+}
+.darkmode-switcher .main-div .iconsec
+{
+    padding: 2px 8px;
+    background: linear-gradient(to right, var(--maincolor),var(--scndcolor));
+    display: flex;
+    border-radius: 20px;
+    /* gap:10px; */
+    align-items: center;
+    justify-content: center;
     position: relative;
 }
+.darkmode-switcher .main-div .iconsec i
+{
+    font-size: 14px;
+}
+.darkmode-switcher .main-div .iconsec .before
+{
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    left: 5%;
+    background: #fff;
+    border-radius: 50%;
+    z-index: 0
+}
+.darkmode-switcher .iconsec .dark, .light
+{
+    height: fit-content;
+    z-index: 1;
+}
+.darkmode-switcher .iconsec .switcher
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    height: fit-content;
+    width: fit-content;
+}
 
+
+
+
+
+
+
+#mainbanner {
+    position: relative;
+}
 #bannersection {
     width: 100%;
     height: 100vh;
@@ -271,7 +348,6 @@ body {
     justify-content: center;
     position: relative;
 } */
-
 #bannersection .left {
     display: flex;
     justify-content: center;

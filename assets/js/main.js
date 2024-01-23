@@ -127,3 +127,13 @@ document.body.addEventListener('click', event => {
         ],
       });
     }
+
+
+
+
+
+
+
+
+    // const headerWidth = document.getElementById('para-w').offsetWidth;
+    // document.documentElement.style.setProperty('--header-width', `${headerWidth}px`);

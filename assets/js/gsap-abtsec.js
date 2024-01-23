@@ -12,11 +12,11 @@ const splitTypes = document.querySelectorAll('.abt-para')
                     trigger:char,
                     start:"top 40%",
                     end:'800% 60%',
-                    scrub: 1,
+                    scrub: .1,
                     // markers: true
                 },
                 opacity: 0.1,
-                stagger: 1
+                stagger: .1
             })
 
         })
