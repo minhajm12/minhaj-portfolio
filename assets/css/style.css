@@ -252,9 +252,12 @@ body {
 .darkmode-switcher
 {
     position: absolute;
-    top:45%;
+    left: 5%;
+    top:50%;
+    /* transform: ; */
     width: fit-content;
-    transform: rotate(-90deg);
+    transform:  translate(-50%, -50%) rotate(-90deg);
+    z-index: 999;
 }
 .darkmode-switcher .main-div
 {
@@ -279,7 +282,6 @@ body {
 }
 .darkmode-switcher .main-div .iconsec
 {
-    padding: 2px 8px;
     background: linear-gradient(to right, var(--maincolor),var(--scndcolor));
     display: flex;
     border-radius: 20px;
@@ -290,32 +292,92 @@ body {
 }
 .darkmode-switcher .main-div .iconsec i
 {
-    font-size: 14px;
+    font-size: 12px;
 }
-.darkmode-switcher .main-div .iconsec .before
+.darkmode-switcher .before
 {
-    width: 22px;
-    height: 22px;
+    width: 20px;
+    height: 20px;
     position: absolute;
-    left: 5%;
+    left: 3px;
     background: #fff;
     border-radius: 50%;
-    z-index: 0
+    z-index: 0;
+    transition:.3s ease;
+
 }
 .darkmode-switcher .iconsec .dark, .light
 {
     height: fit-content;
     z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+.darkmode-switcher .iconsec .dark
+{
+    margin-right: 10px;
+}
+/* .darkmode-switcher .iconsec .fa-sun
+{
+    color:#000;
+} */
+.darkmode-switcher .iconsec .fa-moon
+{
+    color:#fff;
+    margin-right: 2px;
+    transition: .3s ease;
 }
 .darkmode-switcher .iconsec .switcher
 {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    /* gap: 15px; */
     height: fit-content;
     width: fit-content;
+    padding: 5px;
 }
+.dark-main.active .before
+{
+    left: 28px;
+}
+.dark-main.active .fa-moon
+{
+    color: #000;
+}
+.dark-main.active .fa-sun
+{
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
