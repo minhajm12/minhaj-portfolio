@@ -7,10 +7,10 @@ menu_open.addEventListener('click', function () {
 })
 
 // Close Menu
-let menu_close = document.querySelector('.menuclose')
-menu_close.addEventListener('click', function () {
-      document.querySelector(".menucnvs").classList.remove('menucnvs-active')
-})
+// let menu_close = document.querySelector('.menuclose')
+// menu_close.addEventListener('mouseover', function () {
+//       document.querySelector(".menucnvs").classList.remove('menucnvs-active')
+// })
 
 
 //Click Outside Display None

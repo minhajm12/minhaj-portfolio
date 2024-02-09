@@ -6,7 +6,7 @@ function darkModeSwitcher() {
            document.getElementById(id).classList.toggle(cls)
         }
     }
-    function dark_classes(txt,cls){
+    function dark_class(txt,cls){
         if(document.querySelector(txt) != null){
           document.querySelector(txt).classList.toggle(cls)
         }
@@ -17,9 +17,28 @@ function darkModeSwitcher() {
 
 
     dark_mode('dark-main', 'active')
+    dark_class('body', 'bg-dark')
+    dark_class('.headersection', 'headersection-dark')
+    dark_class('.menucnvs', 'menucnvs-dark')
+    dark_mode_classes('p', 'text-white')
+    dark_mode_classes('h1', 'text-white')
+    dark_mode_classes('h2', 'text-white')
+    dark_mode_classes('h3', 'text-white')
+    dark_mode_classes('h4', 'text-white')
+    dark_mode_classes('h5', 'text-white')
+    dark_mode_classes('h6', 'text-white')
+    // dark_mode_classes('i', 'text-white')
+    dark_mode_classes('a', 'text-white')
 
 
-}
+
+    document.querySelectorAll('.logo-light').forEach(item => item.classList.toggle('d-none'))
+    document.querySelectorAll('.logo-dark').forEach(item => item.classList.toggle('d-none'))
+
+   document.querySelector('.dark-menu').classList.toggle('d-none')
+   document.querySelector('.light-menu').classList.toggle('d-none')
+
+}   
 
 
 darkmodeswitcher.addEventListener('click', darkModeSwitcher);
