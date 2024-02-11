@@ -2,31 +2,41 @@
 
 // Open Menu
 let menu_open = document.querySelector('.menuopen')
-menu_open.addEventListener('click', function () {
-      document.querySelector(".menucnvs").classList.add('menucnvs-active')
+let menucanvs = document.querySelector(".menucnvs")
+
+menu_open.addEventListener('click', function (event) {
+      menucanvs.classList.toggle('menucnvs-active')
+      event.stopPropagation();
 })
 
 // Close Menu
-// let menu_close = document.querySelector('.menuclose')
-// menu_close.addEventListener('mouseover', function () {
-//       document.querySelector(".menucnvs").classList.remove('menucnvs-active')
-// })
+let menu_close = document.querySelector('.menuclose')
+menu_close.addEventListener('click', function () {
+      document.querySelector(".menucnvs").classList.remove('menucnvs-active')
+})
 
 
 //Click Outside Display None
-document.body.addEventListener('click', event => {
-      // check if the clicked element is the 'my-element' element or one of its children
-      const clickedElement = event.target;
-      const myElement = document.querySelector('.menuopen');
-      if (myElement.contains(clickedElement)) {
-        // do nothing if the clicked element is the 'my-element' element or one of its children
-        return;
+// document.body.addEventListener('click', event => {
+//       // check if the clicked element is the 'my-element' element or one of its children
+//       const clickedElement = event.target;
+//       const myElement = document.querySelector('.menuopen');
+//       if (myElement.contains(clickedElement)) {
+//         // do nothing if the clicked element is the 'my-element' element or one of its children
+//         return;
+//       }
+
+//       // remove the 'active' class from the 'my-element' element
+//       document.querySelector('.menucnvs').classList.remove('menucnvs-active')
+//     });
+
+
+    document.addEventListener("click", function(event) {
+      // Check if the clicked element is outside of the dropdown div
+      if (!menucanvs.contains(event.target) && event.target !== menu_open) {
+          menucanvs.classList.remove('menucnvs-active'); // Hide the dropdown div
       }
-
-      // remove the 'active' class from the 'my-element' element
-      document.querySelector('.menucnvs').classList.remove('menucnvs-active')
-    });
-
+  });
 
 
 

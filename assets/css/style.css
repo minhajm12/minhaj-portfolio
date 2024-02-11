@@ -1,8 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 @font-face {
-    font-family: 'trap';
-    src: url('assets/fonts/Trap-Regular.otf');
+    font-family: 'MyFont';
+    src: url('../fonts/Trap-ExtraBold.otf');
+}
+@font-face {
+    font-family: 'MyFont 2';
+    src: url('../fonts/Trap-Bold.otf');
 }
 
 * {
@@ -10,6 +14,7 @@
     padding: 0;
     font-family: 'Lexend', sans-serif;
     box-sizing: border-box;
+
 }
 
 
@@ -37,6 +42,7 @@ h1,h2,h3,h4,h5,h6
 }
 
 body {
+    transition: .3s ease;
     background: var(--primary);
 }
 .bg-dark
@@ -55,6 +61,7 @@ body {
     /* height: 100px; */
     position: fixed;
     width: 100%;
+    transition: .3s ease;
     z-index:10;
 }
 .headersection-dark
@@ -441,6 +448,7 @@ body {
     font-size: 36px;
     margin-bottom: 10px;
     font-weight: 700;
+    font-family: 'MyFont 2' !important;
 }
 
 #bannersection .left h2 {
@@ -505,7 +513,7 @@ body {
 
 
 .banner-text {
-    font-family: 'trap' !important;
+    font-family: 'MyFont' !important;
 }
 
 .grade-sec {
