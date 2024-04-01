@@ -278,7 +278,10 @@ body {
 /* SWITCHER SECTION */
 .darkmode-switcher
 {
-    position: absolute;
+    position: fixed;
+    background: #fff;
+    border-radius: 40px;
+    padding: 5px 5px 5px 10px;
     left: 5%;
     top:50%;
     /* transform: ; */
