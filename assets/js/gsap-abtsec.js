@@ -7,30 +7,30 @@ const splitTypes = document.querySelectorAll('.abt-para')
             const text = new SplitType(char, { types:'chars,words'})
         
 
-            gsap.from(text.chars,{
-                scrollTrigger: {
-                    trigger:char,
-                    start:"top 40%",
-                    end:'800% 60%',
-                    scrub: .1,
-                    // markers: true
-                },
-                opacity: 0.1,
-                stagger: .1
-            })
+                gsap.from(text.chars,{
+                    scrollTrigger: {
+                        trigger:char,
+                        start:"top 40%",
+                        end:'+=300%',
+                        scrub: .1,
+                        markers: true
+                    },
+                    opacity: 0.1,
+                    stagger: .1
+                })
 
         })
 
         var tl = gsap.timeline({scrollTrigger:{
             trigger:".about-section",
             start:"top top",
-            end:"180% 45%",
+            end:"+=300%",
             scrub:true,
             pin:true,
-            // markers:{
-            //     startColor:"purple",
-            //     endColor:"fuchsia",
-            // }
+            markers:{
+                startColor:"purple",
+                endColor:"fuchsia",
+            }
         }});
 
 
