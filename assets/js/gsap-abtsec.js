@@ -13,7 +13,7 @@ const splitTypes = document.querySelectorAll('.abt-para')
                         start:"top 40%",
                         end:'+=300%',
                         scrub: .1,
-                        markers: true
+                        // markers: true
                     },
                     opacity: 0.1,
                     stagger: .1
@@ -27,10 +27,10 @@ const splitTypes = document.querySelectorAll('.abt-para')
             end:"+=300%",
             scrub:true,
             pin:true,
-            markers:{
-                startColor:"purple",
-                endColor:"fuchsia",
-            }
+            // markers:{
+                // startColor:"purple",
+                // endColor:"fuchsia",
+            // }
         }});
 
 
